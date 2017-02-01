@@ -3,5 +3,5 @@
  const saying = 'What up';
 
 message = 'Hey!';
-let = 'Bonjour';
-const = 'ciao';
+greeting = 'Bonjour';
+saying = 'ciao';
