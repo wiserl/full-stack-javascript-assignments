@@ -8,3 +8,7 @@ Test('name is exported properly', t => {
 Test('email is exported properly', t => {
   t.truthy(Assignment.email);
 });
+
+Test('phone is exported properly', t => {
+  t.truthy(Assignment.email);
+});
