@@ -15,7 +15,7 @@ Test(`greetingArray is an array`, t => {
 
 Test('begins works properly', t => {
   t.truthy(Assignment.begins('Hello', 'H'));
-});
+})
 
 Test('begins works properly', t => {
   t.falsy(Assignment.begins('Hello', 'D'));
