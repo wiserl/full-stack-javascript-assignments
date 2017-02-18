@@ -1,20 +1,19 @@
+
 export const ssn = value => {
 
   const sanitize = () => value.replace(/\D+/g, '');
 
   const format = (value) => `${value.substring(0, 3)}-${value.substring(3, 5)}-${value.substring(5)}`;
 
-  const isValid = () => {
-    // Your code goes here....
-    //  return ??
-  };
+  const isValid = () => sanitize(value).toString().length === 9;
 
   return {
 
     isValid,
 
     toString(){
-
+      const sanitized = sanitize();
+      return format(sanitized);
     }
   };
 };
